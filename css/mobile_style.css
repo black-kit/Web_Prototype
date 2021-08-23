@@ -1,0 +1,173 @@
+*{
+    font-family: 'Gotham', 'Spoqa Han Sans Neo';
+    color: #666;
+    font-size: 1vm;
+    line-height: 1.5;
+}
+li a{
+    display: inline-block;
+}
+
+article, div{
+    text-align: center;
+}
+h1{
+    color: #1ecad3;
+    font-weight: bold;
+    font-size: 3vm;
+}
+/*=========전체 적용=============*/
+header{
+    width: 100%;
+    height: 100%;
+    margin: 20vm;
+}
+nav{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    text-decoration-line : none;
+}
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+.footer_detail{
+    text-align: left;
+    display:inline-block;
+    padding: 20px 20px;
+    margin: 25px 10px;
+    width: 100%;
+    height:20%;
+    font-size: 0.7em;
+
+}
+article, div{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    width: 5%;
+    margin: 2% 4%;
+}
+table{
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+aside{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+h3{
+    color: rgb(100, 208, 223);
+    font-size: 30px;
+    font-weight: bold;
+}
+a:link, a:visited{
+    text-decoration: none;
+}
+/*============header===============*/
+.web_title{
+    font-size: 100%;
+    font-weight: 1000;
+    color: rgb(66, 195, 189);
+    display: inline-block;
+    margin: 20px 300px;
+    text-decoration-line : none;
+}
+.login_nav{
+    display:inline-block;
+    margin: 10px 10px;
+    font-weight: lighter;
+    text-decoration-line : none;
+}
+.nav_link{
+    text-decoration-line : none;
+}
+.event_logo{
+    color: white;
+    display:inline-block;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-color: white;
+    background-color: rgb(66, 195, 189);
+    width: 50%;
+    padding: 20px;
+}
+.quiz_logo{
+    color: white;
+    display:inline-block;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-color: white;
+    background-color: rgb(66, 195, 189);
+    width: 20%;
+}
+
+/*===========index.html==============*/
+#ad_event{
+    display:inline-block;
+    font-size:larger;
+    font-weight: bold;
+    margin: 20px;
+}
+.index_vid{
+    width:100%;
+}
+.event_image{
+    display:inline-block;
+    margin: 0px auto;
+    width: 100%;
+}
+.event_detail{
+    display:inline-block;
+    margin: 0px auto;
+    width: 30%;
+}
+.wave_div{
+    width:100%;
+}
+.wave_pic{
+    width:100%;
+    height:100%;
+}
+.animation1{
+    display: inline-block;
+    position: relative;
+}
+.ani_background{
+    width:100%;
+}
+.ani_button{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+#ani1{
+    animation-name: ani_button;
+    animation-duration: 3s ;
+    animation-iteration-count:infinite;
+}
+@keyframes ani_button{
+    0%{margin-top:0%;} /*0~10 : 정지*/
+    10%{margin-top:2%;}  /* 10 ~25: 변이*/
+    25%{margin-top:2%;} /* 20 ~35: 변이*/
+    35%{margin-top:2%;} /* 35 ~50: 변이*/
+    45%{margin-top:2%;}
+    65%{margin-top:0%;}
+    70%{margin-top:0%;}
+}
+

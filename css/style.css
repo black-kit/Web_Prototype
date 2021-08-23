@@ -1,0 +1,695 @@
+/*============폰트 설정===============*/
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../font/Gotham-Bold.woff2') format('woff2'), url('../fontGotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../font/Gotham-Black.woff2') format('woff2'), url('../font/Gotham-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url('../font/SpoqaHanSansNeo-Bold.woff2') format('woff2'), url('../font/SpoqaHanSansNeo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url('../font/SpoqaHanSansNeo-Regular.woff2') format('woff2'), url('../font/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Gotham', 'Spoqa Han Sans Neo';
+    /* 만약에 한글 폰트가 앞으로 오면 영어가 먹지 않는다. 첫번째 나온 위치가 우선순위가 높다. 
+    이 의미는 무엇이냐? 영문 폰트는 무조건 고담이고 나머지 한글은 스포카로 할거다!*/
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+/*=========전체 적용=============*/
+
+header {
+    display: inline-block;
+    width: 1000px;
+    height: 100px;
+}
+
+nav {
+    display: inline-block;
+    width: 1000px;
+    height: 100px;
+    text-decoration-line: none;
+}
+
+#container {
+    width: 1000px;
+    height: 100px;
+}
+
+.footer_detail {
+    text-align: left;
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 25px 10px;
+    width: 1000px;
+    height: 200px;
+    font-size: 0.7em;
+    color: rgb(189, 194, 194);
+}
+
+article,
+div {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    padding: 30px;
+    margin: 0 20px;
+}
+
+table {
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+aside {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+h3 {
+    color: rgb(100, 208, 223);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+
+/*============header===============*/
+
+.web_title {
+    font-size: 30px;
+    font-weight: 1000;
+    color: rgb(66, 195, 189);
+    display: inline-block;
+    margin: 20px 300px;
+    text-decoration-line: none;
+    position: relative;
+}
+
+.login_nav {
+    display: inline-block;
+    margin: 10px 10px;
+    font-weight: lighter;
+    text-decoration-line: none;
+}
+
+.join_nav {
+    display: inline-block;
+    margin: 10px 10px;
+    font-weight: lighter;
+    text-decoration-line: none;
+}
+
+.nav_link {
+    display: inline-block;
+    text-decoration-line: none;
+}
+
+.event_logo {
+    color: white;
+    display: inline-block;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-color: white;
+    background-color: rgb(66, 195, 189);
+    width: 20%;
+    padding: 10px;
+}
+
+.quiz_logo {
+    color: white;
+    display: inline-block;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-color: white;
+    background-color: rgb(66, 195, 189);
+    width: 20%;
+}
+
+
+/*===========index.html==============*/
+
+#ad_event {
+    display: inline-block;
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.index_vid {
+    width: 100%;
+}
+
+.event_image {
+    display: inline-block;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.event_detail {
+    display: inline-block;
+    margin: 0px auto;
+    width: 30%;
+}
+
+.wave_div {
+    width: 100%;
+}
+
+.event_table tr td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.event_table tbody {
+    align-content: center;
+}
+
+.wave_pic {
+    width: 100%;
+    height: 100%;
+}
+
+.animation1 {
+    display: inline-block;
+    position: relative;
+}
+
+.ani_background {
+    width: 100%;
+}
+
+.ani_button {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+#ani1 {
+    animation-name: ani_button;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani_button {
+    0% {
+        margin-top: 0%;
+    }
+    /*0~10 : 정지*/
+    10% {
+        margin-top: 2%;
+    }
+    /* 10 ~25: 변이*/
+    25% {
+        margin-top: 2%;
+    }
+    /* 20 ~35: 변이*/
+    35% {
+        margin-top: 2%;
+    }
+    /* 35 ~50: 변이*/
+    45% {
+        margin-top: 2%;
+    }
+    65% {
+        margin-top: 0%;
+    }
+    70% {
+        margin-top: 0%;
+    }
+}
+
+
+/*======= about_us.html=========*/
+
+.emp_text {
+    font-size: 250%;
+    font-weight: 900;
+}
+
+.about_vid {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.about_nav {
+    display: inline-block;
+    width: 100px;
+    height: 16px;
+    margin: 20px, auto;
+    color: white;
+    font-weight: bolder;
+    text-decoration-line: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgb(66, 195, 189);
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#we_are_img {
+    width: 100%;
+}
+
+.about_us_title {
+    font-size: 50px;
+    font-weight: 3000;
+    color: rgb(100, 208, 223);
+}
+
+#about_gold_prize {
+    display: inline-block;
+    margin: 30px auto;
+}
+
+#about_silver_prize {
+    display: inline-block;
+    margin: 30px auto;
+}
+
+#about_silver_prize_detail {
+    display: inline-block;
+    margin: 30px 30px;
+}
+
+#about_gold_prize_detail {
+    display: inline-block;
+    margin: 30px 30px;
+}
+
+#siver_prize {
+    width: 50%;
+}
+
+#gold_prize {
+    width: 50%;
+}
+
+#factory_div {
+    display: inline-block;
+    margin: 30px;
+    position: relative;
+}
+
+#factory_img {
+    width: 100%;
+}
+
+#factory_img_detail {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#specialty_section {
+    display: inline-block;
+    position: relative;
+}
+
+#brand_symbol {
+    width: 100%;
+}
+
+#recipe {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#material {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#tech {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#team_1,
+#team_2,
+#team_3 {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.factory_img_title {
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+}
+
+.logo_button {
+    background-color: rgb(100, 208, 223);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: inline-block;
+    padding: 20px;
+}
+
+
+/*========shop.html=====*/
+
+.image_div {
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    margin: -8px -8px;
+}
+
+.image_detail {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    color: white;
+}
+
+.image {
+    width: 100%;
+}
+
+.shop_word {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100, 208, 223);
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.white-font {
+    color: white;
+}
+
+.comming_soon {
+    background-color: rgb(100, 208, 223);
+    width: 100%;
+    height: 100%;
+}
+
+
+/*==========login============*/
+
+.signin {
+    display: inline-block;
+    width: 50%;
+}
+
+.login input[placeholder] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.login {
+    display: inline-block;
+    width: 100%;
+}
+
+.login label {
+    display: inline-block;
+}
+
+.login_title {
+    color: rgb(100, 208, 223);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.login_button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px rgb(100, 208, 223);
+    color: white;
+    background-color: rgb(100, 208, 223);
+    border-radius: 15px;
+    width: 90%;
+    text-align: center;
+    height: 5%;
+}
+
+.keep_login {
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    width: 90%;
+}
+
+.align_left {
+    display: inline-block;
+    margin: 10px 10px;
+    width: 45%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.align_right {
+    display: inline-block;
+    margin: 10px 10px;
+    margin-bottom: 50px;
+    width: 45%;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/*===========회원 가입==========*/
+
+.joinin {
+    display: inline-block;
+    width: 50%;
+}
+
+.joinin input[placeholder] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    display: inline-block;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.joinin label {
+    display: inline-block;
+}
+
+.email {
+    display: inline-block;
+    width: 100%;
+}
+
+.password {
+    display: inline-block;
+    width: 100%;
+}
+
+.signin_button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px rgb(100, 208, 223);
+    color: white;
+    background-color: rgb(100, 208, 223);
+    width: 40%;
+    text-align: center;
+    height: 5%;
+    border-radius: 15px;
+}
+
+.jbutton {
+    color: white;
+}
+
+
+/*===========가입 동의==========*/
+
+.join_agree {
+    display: inline-block;
+    width: 50%;
+}
+
+.agree {
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+}
+
+#agree_terms {}
+
+.agree button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px rgb(100, 208, 223);
+    color: white;
+    background-color: rgb(100, 208, 223);
+    width: 20%;
+    text-align: center;
+    height: 5%;
+    border-radius: 15px;
+}
+
+.agree textarea {
+    width: 500px;
+    height: 300px;
+}
+
+.agree input {
+    margin-bottom: 30px;
+}
+
+
+/*======= 뉴스 게시판====*/
+
+.slide_article {
+    width: 100%;
+}
+
+.slide_article ul,
+li {
+    list-style: none;
+}
+
+.slide_img {
+    width: 100%;
+}
+
+.slide_article {
+    height: 70%;
+    overflow: hidden;
+}
+
+.slide_article ul {
+    width: 300%;
+    display: flex;
+    animation: slide 8s infinite;
+}
+
+.slide_article li {
+    width: 100%;
+    height: 300px;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+    /*0~10 : 정지*/
+    10% {
+        margin-left: 0%;
+    }
+    /* 10 ~25: 변이*/
+    25% {
+        margin-left: -100%;
+    }
+    /* 20 ~35: 변이*/
+    35% {
+        margin-left: -100%;
+    }
+    /* 35 ~50: 변이*/
+    50% {
+        margin-left: -200%;
+    }
+    60% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    85% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+.news_table {
+    padding: 20px;
+}
+
+.news_table tr td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid rgb(170, 168, 168);
+}
+
+.news_read_table {
+    padding: 20px;
+}
+
+.news_read_table tr {
+    text-align: left;
+}
+
+.news_read_table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgb(170, 168, 168);
+    text-align: left;
+    width: 60%;
+}
+
+
+/*======= contact 게시판====*/
+
+.class_text {
+    text-align: right;
+}

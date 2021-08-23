@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a class="web_title" href="index.html">제주맥주</a>
+            <a class="login_nav" href="login.html">LOGIN</a>
+            <a class="login_nav" href="join_agree.html">JOIN</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">EVENT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <div>
+                <a href="#"><img src="./img/share.png" width="50"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/up.png" width="50"></a>
+            </div>
+        </aside>
+        <main>
+            <div>
+                <h2 class="emp_text">JOIN</h2>
+                <!--사진-->
+                <form action="index.html">
+                    <div class="joinin">
+                        <div class="email">
+                            <!-- <label for="email">이메일 &centerdot;</label> -->
+                            <input id="email" name="email" type="email" placeholder="이메일">
+                        </div>
+                        <div class="password">
+                            <!-- <label for="pass1">비밀번호 &centerdot;</label> -->
+                            <input id="pass1" name="pass" type="password" placeholder="비밀번호">
+                            <input id="pass2" type="password" placeholder="비밀번호 확인">
+                            <!--비밀번호 확인은 서버에 전송하지 않을 거라서 name을 지정하지 않았다-->
+                        </div>
+                        <div class="name">
+                            <!-- <label for="name">이름 &centerdot;</label> -->
+                            <input id="name" name="name" type="text" placeholder="이름을 입력하세요.">
+                        </div>
+                        <div class="sex">
+                            <label for="sex">성별 &centerdot;</label>
+                            <input id="man" name="man" type="radio" value="man">
+                            <label for="man">남자</label>
+                            <input id="woman" name="woman" type="radio" value="woman">
+                            <label for="woman">여자</label>
+                        </div>
+                        <div class="contact">
+                            <!-- <label for="contact">연락처 &centerdot;</label> -->
+                            <input id="phone" name="phone" type="tel" placeholder="연락처">
+                        </div>
+                        <div class="address">
+                            <!-- <label for="address">주소 &centerdot;</label> -->
+                            <input id="address" name="address" type="text" placeholder="주소">
+                        </div>
+                        <div class="birth">
+                            <!--나중에 수정-->
+                            <label for="birth">생년월일 &centerdot;</label>
+                            <input id="birth" name="birth" type="date" min="2021-07-26">
+                        </div>
+                        <div class="agree">
+                            <input id="agree_terms" name="agree_terms" type="hidden">
+                            <input id="user_info_agree" name="user_info_agree" type="hidden">
+                            <input id="marketing_sms_agree" name="marketing_sms_agree" type="hidden">
+                            <input id="marketing_email_agree" name="marketing_email_agree" type="hidden">
+                        </div>
+                        <button type="submit" class="signin_button" value="가입하기">가입하기</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer_detail">
+                제주맥주 주식회사 대표이사 양석진<br> 본사> 충북대학교 전자정보대학 3관<br><br> 호스팅 제공자 양석진 사업자등록번호 XXX-XX-XXXXXX 기타.<br> 개인정보호호책임자 XXX 고객센터 XX-XXXX-XXXXX, tjrwls08088&commat;naver.com
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
